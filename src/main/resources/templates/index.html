@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Index</title>
+    <div th:replace="fragments/fragments :: head"></div>
+    <title>Home</title>
+
+
 </head>
 <body>
-<p>Under Construction</p>
+<div th:replace="fragments/navbar :: navbar"></div>
+<main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Save Our Sons</h1><br> <h2>Drop the Guns</h2>
+            <p>This is a nonprofit organization dedicated to eliminating gun violence. </p>
+            <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>
 </body>
 </html>

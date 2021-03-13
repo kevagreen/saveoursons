@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
+    <div th:replace="fragments/fragments :: head"></div>
     <title>About</title>
 </head>
 <body>
-<p>Under Construction</p>
+<div th:replace="fragments/navbar :: navbar"></div>
+<!--info from facebook-->
+<h2>Save Our Son Drop The Guns is a Nonprofit Organization that was Founded on July 22, 2018
+    in Memory of Benjamin Finney Jr. My Mission is to raise awareness about gun violence.
+    This Ministry is open to any Parent who was a Victim to Gun Violence.</h2>
+<footer th:replace="fragments/footer :: footer"></footer>
 </body>
 </html>
