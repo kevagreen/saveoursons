@@ -1,0 +1,50 @@
+
+.jumbotron{
+   background-size: cover;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   overflow: hidden;
+   font-size: 30px;
+}
+
+.row{
+    text-align: justify;
+    margin: 20px;
+    font-weight: 900;
+}
+
+p{
+    font-size: 30px;
+}
+
+body {
+   flex-direction: column;
+   justify-content: center;
+   background-color: #494655;
+}
+
+.fb-page{
+   position: absolute;
+   right: 5px;
+   width: 365px;
+   border: 3px solid #4287f5;
+   padding: 10px;
+}
+
+.jumbo-container{
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.7;
+  padding-bottom: 10px;
+}
+
+
+
+
+.footer {
+   height:40px;
+   margin-top:-40px;
+   padding-bottom:40;
+}
+
