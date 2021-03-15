@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- TODO(): Update spring security to version 5 -->
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<head>
+
+
+
+    <!--    <div th:fragment="head-styles">-->
+    <div th:replace="fragments/stylesFragment :: head-styles"></div>
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <div th:replace="fragments/navbar"></div>
+</div>
+<div class="container">
+    <form>
+    <h2>Report New Case Here</h2>
+<!--    <input th:action="@{/submit}" method="post"><br/>-->
+        <input type="text" id="datePlanted" name="datePlanted" th:value="*{datePlanted}" > Date</input><br/>
+        <input type="text" id="timePlanted" name="timePlanted" th:value="*{timePlanted}" > Time</input><br/>
+        <input type="text" id="address" name="address" th:placeholder="Address" class="form-control"> Address</input> <br/>
+        <input type="text" id="deathnumber" name="deathnumber" th:placeholder="Deathnumber" class="form-control"> No. of people died</input> <br/>
+        <input type="text" id="injurednumber" name="injurednumber" th:placeholder="Injurednumber" class="form-control"> No. of people injured</input> <br/>
+        <button class="btn btn-md btn-success btn-block" name="Submit" value="Login" type="Submit">Submit New Case</button>
+    </form>
+
+</div>
+</body>
+</html>
