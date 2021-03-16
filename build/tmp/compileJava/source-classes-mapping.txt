@@ -14,7 +14,7 @@ com/tts/saveoursons/service/VolunteerService.java
  com.tts.saveoursons.service.VolunteerService
 com/tts/saveoursons/model/AppUserRole.java
  com.tts.saveoursons.model.AppUserRole
-com/tts/saveoursons/repository/VolunteerRepository.java
- com.tts.saveoursons.repository.VolunteerRepository
 com/tts/saveoursons/configuration/SecurityConfiguration.java
  com.tts.saveoursons.configuration.SecurityConfiguration
+com/tts/saveoursons/repository/VolunteerRepository.java
+ com.tts.saveoursons.repository.VolunteerRepository

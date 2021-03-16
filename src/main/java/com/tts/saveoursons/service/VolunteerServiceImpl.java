@@ -56,6 +56,6 @@ public class VolunteerServiceImpl implements VolunteerService,UserDetailsService
 
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-         return volunteerRepository.findByEmail(username).orElseThrow();
+         return volunteerRepository.findByEmail(username).orElseThrow(()-> new UsernameNotFoundException("username not found"));
     }
 }
