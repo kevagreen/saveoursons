@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:background="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:replace="fragments/fragments :: head"></div>
+
+    <title>Home</title>
+
+
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"
+        nonce="n1qBVckp"></script>
+
+
+
+    <div class="jumbotron" style="background-image:url('images/crimeScene.jpeg');">
+        <div class="jumbo-container">
+            <div class="row">
+                <div class="col-med-3 btn-holder">
+                </div>
+                <div class="col-med-3">
+                    <h1 class="display-3" style="font-weight: bold"> Save Our Sons Drop the Guns</h1><br>
+            <p>This is a nonprofit organization dedicated to eliminating gun violence. </p>
+            <a class="btn btn-primary btn-lg" href="/about" role="button">Learn more &raquo;</a>
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fb-page" data-href="https://www.facebook.com/SaveOurSonsNoGuns/"
+         data-tabs="timeline,events,messages" data-width="" data-height="" data-small-header="false"
+         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/SaveOurSonsNoGuns/" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/SaveOurSonsNoGuns/">Save Our Sons Drop The Guns</a>
+        </blockquote>
+    </div>
+
+
+
+
+
+<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>
+</body>
+</html>
