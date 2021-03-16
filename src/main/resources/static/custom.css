@@ -1,4 +1,14 @@
 
+.logo{
+    float:left;
+    height:5em;
+    width:5em;
+    left:10px;
+    top:10px;
+    margin: 0px 15px 0px 0px;
+
+}
+
 .jumbotron{
    background-size: cover;
    padding-top: 3%;
