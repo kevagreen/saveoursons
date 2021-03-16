@@ -32,7 +32,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers("/console/**").permitAll()
                 .antMatchers("/api/v1/register").permitAll()
-                .antMatchers("/")
+                .antMatchers("/about")
                 .authenticated()
                 .and().csrf().disable().formLogin()
                 .loginPage("/signin")
