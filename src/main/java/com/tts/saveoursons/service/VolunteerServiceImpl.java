@@ -30,18 +30,18 @@ public class VolunteerServiceImpl implements VolunteerService,UserDetailsService
 
 
     public void addVolunteer(Volunteer volunteer) {
-            Optional<Volunteer> volunteerOptional = volunteerRepository.findByEmail(volunteer.getEmail());
-            if (volunteerOptional.isPresent()){
-                throw new IllegalStateException("email taken");
-            }
+        Optional<Volunteer> volunteerOptional = volunteerRepository.findByEmail(volunteer.getEmail());
+        if (volunteerOptional.isPresent()){
+            throw new IllegalStateException("email taken");
+        }
 
-            volunteer.setEmail(volunteer.getEmail());
-            volunteer.setFirstName(volunteer.getFirstName());
-            volunteer.setLastName(volunteer.getLastName());
-            volunteer.setUsername(volunteer.getUsername());
-            volunteer.setPassword(bCryptPasswordEncoder.encode(volunteer.getPassword()));
-            volunteer.setPhone(volunteer.getPhone());
-            volunteerRepository.save(volunteer);
+        volunteer.setEmail(volunteer.getEmail());
+        volunteer.setFirstName(volunteer.getFirstName());
+        volunteer.setLastName(volunteer.getLastName());
+        volunteer.setUsername(volunteer.getUsername());
+        volunteer.setPassword(bCryptPasswordEncoder.encode(volunteer.getPassword()));
+        volunteer.setPhone(volunteer.getPhone());
+        volunteerRepository.save(volunteer);
 
     }
 
@@ -56,6 +56,6 @@ public class VolunteerServiceImpl implements VolunteerService,UserDetailsService
 
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-         return volunteerRepository.findByEmail(username).orElseThrow();
+        return volunteerRepository.findByEmail(username).orElseThrow(() -> new UsernameNotFoundException("Username not found"));
     }
 }
