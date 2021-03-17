@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:replace="fragments/fragments :: head"></div>
+    <title>Contact</title>
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<h1 class="border-background">
+    <span>Volunteer Sign Form</span>
+</h1>
+<div class="links-container ">
+    <h2 class="element-invisible">Thank you for showing your interest to save sons!</h2><ul class="align-right link-list tabs-primary"></ul> </div>
+<div class="region region-content">
+    <div class="row">
+        <div id="block-system-main" class="block block-system">
+            <form class="small-11 medium-8 large-6 small-centered columns" action="mailto:lfinney4047@gmail.com" method=”GET” target="_blank" id="gva-contact" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-gva-contact-name">
+                <label for="edit-gva-contact-name">Full Name <span class="form-required" title="This field is required.">*</span></label>
+                <input type="text" id="edit-gva-contact-name" name="gva_contact_name" value="" size="60" maxlength="128" class="form-text required">
+            </div><br/>
+
+                <div class="form-item form-type-textfield form-item-gva-contact-phone">
+                    <label for="edit-gva-contact-number">Date of Birth<span class="form-required" title="This field is required.">*</span></label>
+                    <input type="text" id="edit-gva-contact-dob" name="gva_contact_dob" value="" size="60" maxlength="128" class="form-text required">
+                </div><br/>
+
+                <div class="form-item form-type-textfield form-item-gva-contact-phone">
+                    <label for="edit-gva-contact-number">Contact Number <span class="form-required" title="This field is required.">*</span></label>
+                    <input type="text" id="edit-gva-contact-number" name="gva_contact_number" value="" size="60" maxlength="128" class="form-text required">
+                </div><br/>
+
+
+                <div class="form-item form-type-textfield form-item-gva-contact-email">
+                    <label for="edit-gva-contact-email">Email <span class="form-required" title="This field is required.">*</span></label>
+                    <input type="text" id="edit-gva-contact-email" name="gva_contact_email" value="" size="60" maxlength="128" class="form-text required">
+                </div><br/>
+
+                <div class="form-item form-type-textfield form-item-gva-contact-org">
+                    <label for="edit-gva-contact-address">Address <span class="form-required" title="This field is required.">*</span></label>
+                    <input type="text" id="edit-gva-contact-address" name="gva_contact_address" value="" size="60" maxlength="128" class="form-text required">
+                </div><br/>
+
+                <div class="form-item form-type-textarea form-item-gva-contact-comments">
+                    <label for="edit-gva-contact-help">I am interested in volunteering the following activities: </label>
+                    <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-gva-contact-help" name="gva_contact_comments" cols="60" rows="1" class="form-textarea"></textarea><div class="grippie"></div></div><br/>
+                    <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-gva-contact-help2" name="gva_contact_comments" cols="60" rows="1" class="form-textarea"></textarea><div class="grippie"></div></div><br/>
+                    <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-gva-contact-help3" name="gva_contact_comments" cols="60" rows="1" class="form-textarea"></textarea><div class="grippie"></div></div>
+
+                </div>
+                <input type="hidden" name="form_build_id" value="form-6sQ969fTMljD3vU0mvCzRw0vcGvWCkhWSp9OVl_s9Bc">
+                <input type="hidden" name="form_id" value="gva_contact">
+                <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Send" class="form-submit"></div></div></form></div>
+    </div> </div>
+</div>
+<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

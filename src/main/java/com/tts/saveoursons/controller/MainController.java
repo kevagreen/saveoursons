@@ -28,7 +28,7 @@ public class MainController {
     }
 
     @GetMapping(value = "/help")
-    public String contact(){
+    public String help(){
         return "help";
     }
 
