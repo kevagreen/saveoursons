@@ -1,0 +1,26 @@
+h1 {
+    text-shadow:  1.5px 1.5px;
+    text-color: dark gray;
+    text-align:center;
+    width:550px;
+    border-spacing: 15px;
+    border-width:5px;
+    border-style:solid;
+    border-color:gray;
+    margin:auto;
+    padding: 10px;
+}
+
+p {
+  text-shadow: .5px .5px;
+  color:black;
+  width:800px;
+  padding: 15px;
+  position:center;
+  border-width:5px;
+  border-style:solid;
+  border-color:gray;
+  text-align:center;
+  margin:auto;
+}
+
