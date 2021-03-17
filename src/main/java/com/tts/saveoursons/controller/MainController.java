@@ -27,4 +27,9 @@ public class MainController {
         return "volunteer";
     }
 
+    @GetMapping(value = "/help")
+    public String contact(){
+        return "help";
+    }
+
 }
