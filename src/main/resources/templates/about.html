@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en"
+      xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
+    <link href="about.css"
+          rel="stylesheet">
     <div th:replace="fragments/fragments :: head"></div>
     <title>About</title>
 </head>
+
 <body>
+<!--allows navbar to be visible on about page?-->
 <div th:replace="fragments/navbar :: navbar"></div>
-<!--info from facebook-->
-<h2>Save Our Son Drop The Guns is a Nonprofit Organization that was Founded on July 22, 2018
-    in Memory of Benjamin Finney Jr. My Mission is to raise awareness about gun violence.
-    This Ministry is open to any Parent who was a Victim to Gun Violence.</h2>
+<img src="/images/noguns.jpeg" class="w3-circle" alt="No More Gun Violence" style="width:700px;height:600px" >
+<div class=container4>
+    <h1>About Our Organization</h1>
+</div>
+</hr>
+<div>
+    <p>
+        Save Our Sons Drop the Guns is a 501 c(3) Nonprofit Organization founded on July 22, 2018 in memory of
+        Benjamin Finney Jr. Our mission is to raise awareness about gun violence, and the lasting impact that
+        gun violence has on
+        our communities. Our ministry welcomes parents whose child was a victim of gun violence. Save Our Sons Drop
+        The Guns appreciates all donations, and is proud to offer volunteer opportunities, outreach events and other
+        resources that will help further our mission to end gun violence and build a safer community for our
+        youth.
+    </p>
+</div>
+
+<!--Allows footer to be visible on about page-->
 <footer th:replace="fragments/footer :: footer"></footer>
+
 </body>
 </html>
