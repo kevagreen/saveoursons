@@ -1,52 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:background="http://www.w3.org/1999/xhtml">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div th:replace="fragments/fragments :: head"></div>
-
     <title>Help</title>
-
-
-    <style>
-            * {
-              box-sizing: border-box;
-              column-gap: 40px;
-            }
-
-            .column {
-              float: left;
-              padding: 10px;
-
-            }
-
-            .left {
-              width: 60%;
-
-            }
-
-            .right {
-              width: 35%;
-              padding: 30px;
-              margin-left: 30px;
-              height: 600px;
-
-            }
-
-            /* Clear floats after the columns */
-            .row:after {
-              content: "";
-              display: table;
-              clear: both;
-            }
-    </style>
+    <link th:href="help.css" href="help.css" th:rel="stylesheet">
 </head>
 <body>
 <div th:replace="fragments/navbar :: navbar"></div>
 
 <div class="row">
 
-    <div class="column left" style="background-color:#aaa;">
+    <div class="column" style="background-color:#aaa;">
         <h2 style="text-align: center">Our Resources</h2>
-        <h5>Our ministry offers the following resources:</h5>
+        <h5 style="text-align: center">Our ministry offers the following resources:</h5>
         <ul>
             <li>Awareness</li>
             <li>Resources</li>
@@ -54,56 +21,53 @@
             <li>Counseling</li>
         </ul>
         <hr>
-        <img src="./images/saveoursons-1.jpg" width="200" height="150"/>
-        <img src="./images/resource1.jpg" width="200" height="150"/>
-        <img src="./images/resource2.jpg" width="200" height="150"/>
-        <img src="./images/resource3.jpg" width="200" height="150"/>
+        <img src="./images/saveoursons-1.jpg" width="170" height="130"/>
+        <img src="./images/resource1.jpg" width="170" height="130"/>
+        <img src="./images/resource2.jpg" width="170" height="130"/>
+        <img src="./images/resource3.jpg" width="170" height="130"/>
     </div>
 
-    <div class="column right" style="background-color: #c2ccc5">
+    <div class="column" style="background-color: #c2ccc5">
 
-        <h2>Contact Form</h2>
-        <h6>If you are the victim and need our help, please this form</h6>
-
-
-        <form class="small-11 medium-8 large-6 small-centered columns" action="mailto:lfinney4047@gmail.com" method=”GET” target="_blank" id="gva-contact" accept-charset="UTF-8">
-            <div>
-                <div class="form-item form-type-textfield form-item-gva-contact-name">
-                    <label for="edit-gva-contact-name">Full Name <span class="form-required" title="This field is required.">*</span></label>
-                    <input type="text" id="edit-gva-contact-name" name="gva_contact_name" value="" size="60" maxlength="128" class="form-text required">
+        <h2 style="text-align: center">Contact Form</h2>
+        <h6 style="text-align: center">If you are the victim and need our help, please this form</h6>
+        <div class="container-column">
+            <form class="form" action="mailto:lfinney4047@gmail.com" method=”GET” target="_blank" id="gva-contact" accept-charset="UTF-8">
+                <div class="row">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname">
                 </div>
 
-                <div class="form-item form-type-textfield form-item-gva-contact-phone">
-                    <label for="edit-gva-contact-number">Contact Number <span class="form-required" title="This field is required.">*</span></label>
-                    <input type="text" id="edit-gva-contact-number" name="gva_contact_number" value="" size="60" maxlength="128" class="form-text required">
+                <div class="row">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname">
                 </div>
 
-                <div class="form-item form-type-textfield form-item-gva-contact-email">
-                    <label for="edit-gva-contact-email">Email <span class="form-required" title="This field is required.">*</span></label>
-                    <input type="text" id="edit-gva-contact-email" name="gva_contact_email" value="" size="60" maxlength="128" class="form-text required">
+                <div class="row">
+                    <label for="number">Contact Number</label>
+                    <input type="text" id="number" name="number">
                 </div>
 
-                <div class="form-item form-type-textfield form-item-gva-contact-org">
-                    <label for="edit-gva-contact-address">Address <span class="form-required" title="This field is required.">*</span></label>
-                    <input type="text" id="edit-gva-contact-address" name="gva_contact_address" value="" size="60" maxlength="128" class="form-text required">
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
                 </div>
 
-                <div class="form-item form-type-textarea form-item-gva-contact-comments">
-                    <label for="edit-gva-contact-help">Specify the helps you are seeking: </label>
-                    <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-gva-contact-help" name="gva_contact_comments" cols="60" maxlength="128" rows="5" class="form-textarea" style="background-color: white"></textarea><div class="grippie"></div></div>
+                <div class="row">
+                    <label for="address"> Full Address</label>
+                    <input type="text" id="address" name="address">
                 </div>
-                <!--            <input type="hidden" name="form_build_id" value="form-6sQ969fTMljD3vU0mvCzRw0vcGvWCkhWSp9OVl_s9Bc">-->
-                <!--            <input type="hidden" name="form_id" value="gva_contact">-->
-                <div class="form-actions form-wrapper" id="edit-actions">
-                    <input type="submit" id="edit-submit" name="op" value="Send" class="form-submit">
+
+                <div class="row">
+                    <label for="subject">Specify the helps you are seeking for:</label>
+                    <textarea id="subject" name="subject" style="height:200px"></textarea>
                 </div>
-            </div>
+                <div class="row">
+                    <input type="submit" value="Submit" align="center">
+                </div>
         </form>
-
-
-
-
-    </div>
+        </div>
+     </div>
 </div>
 
 <footer th:replace="fragments/footer :: footer"></footer>
