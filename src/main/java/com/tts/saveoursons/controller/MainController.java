@@ -32,4 +32,14 @@ public class MainController {
         return "help";
     }
 
+    @GetMapping(value = "/help")
+    public String help(){
+        return "help";
+    }
+
+    @GetMapping(value = "/media")
+    public String media(){
+        return "media";
+    }
+
 }
