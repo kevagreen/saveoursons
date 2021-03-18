@@ -22,11 +22,6 @@ public class MainController {
         return "donate";
     }
 
-    @GetMapping(value = "/volunteer")
-    public String volunteer(){
-        return "volunteer";
-    }
-
     @GetMapping(value = "/help")
     public String contact(){
         return "help";
