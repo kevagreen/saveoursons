@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:background="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:replace="fragments/fragments :: head"></div>
+
+    <title>Home</title>
+
+
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"
+        nonce="n1qBVckp"></script>
+
+
+<div class="jumbotron" style="background-image:url('images/crimeScene.jpeg');">
+    <div class="jumbo-container">
+        <div class="row">
+            <div class="col-med-3 btn-holder">
+            </div>
+            <div class="col-med-3">
+                <h1 class="display-3" style="font-weight: bold"> Save Our Sons Drop the Guns</h1><br>
+                <p>We are a nonprofit organization dedicated to eliminating gun
+                    violence and helping those who have lost loved ones. </p>
+                <a class="btn btn-primary btn-lg" href="/about" role="button">Learn more &raquo;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex_container">
+    <div class="container_stats">
+        <img class="stat_image" src="/images/9hours.png" alt="9hours" style="width:300px" height="400px">
+
+        <img class="stat_image" src="/images/louisiana_score_card.png" alt="LaScoreCard" style="width:300px" height="400px">
+    </div>
+
+    <div class="text">
+        <p>Louisiana is ranked 2nd in America for the highest gun related death rate.
+            According to the Gun Violence Archive, 2020 was a record-breaking year for gun homicides in America.
+            A total of at least 19,223 people lost their lives due to gun violence. Of this number 707 people were
+            Louisiana residents which means thousands of families here at home suffer the grief of loosing someone.
+            In 2019 federal funding was allocated for the study of the prevention of gun violence after a 20 year
+            freeze.
+            While research is greatly needed it will not solve the problem alone. Save Our Sons is dedicated to public
+            awareness, intervention of gun violence and support of the bereaved.
+        </p>
+
+    </div>
+
+    <div class="fb-page" data-href="https://www.facebook.com/SaveOurSonsNoGuns/"
+         data-tabs="timeline,events,messages" data-width="522" data-height="990" data-small-header="false"
+         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/SaveOurSonsNoGuns/" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/SaveOurSonsNoGuns/">Save Our Sons Drop The Guns</a>
+        </blockquote>
+    </div>
+
+
+<img src="/images/enough.jpeg" alt="stop the violence" style="width:700px;height:600px" class="center">
+</div>
+    <footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

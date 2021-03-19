@@ -1,0 +1,148 @@
+
+.logo{
+    float:left;
+    height:5em;
+    width:5em;
+    left:10px;
+    top:10px;
+    margin: 0px 15px 0px 0px;
+
+}
+
+.jumbotron{
+   background-size: cover;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   overflow: hidden;
+   font-size: 30px;
+}
+
+
+
+.flex_container{
+display: flex;
+flex-wrap: wrap;
+order: 4;
+justify-content: space-around;
+
+}
+
+.container_stats{
+min-width: 255px;
+height:20%;
+flex: 1; auto;
+border: 3px solid #4287f5;
+background: #8983a3
+}
+
+
+.text{
+color: white;
+text-align: center;
+width: 45%;
+height: 30%;
+margin: 0px 15px 0px 15px;
+}
+
+.fb-page{
+min-width: 355px;
+border: 3px solid #4287f5;
+justify-content: flex-end;
+height: 80%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 0;
+  min-width: 147px;
+}
+
+.row{
+    margin: 20px;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.stat_image{
+    justify-content: center;
+    margin: 10px 5px 40px 35px;
+    padding: 20px;
+}
+
+p{
+   font-size: 40px;
+}
+
+body {
+   background: #494655;
+}
+
+.jumbo-container{
+  margin: 20px;
+  background: #ffffff;
+  border: 1px solid black;
+  opacity: 0.7;
+  padding-bottom: 10px;
+}
+
+.footer {
+   height:40px;
+   margin-top:-40px;
+   padding-bottom:40;
+}
+
+ul.socialIcons {
+  padding: 0;
+  text-align: center;
+}
+
+.socialIcons li {
+  background-color: yellow;
+  list-style: none;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.socialIcons li a {
+  display: block;
+  padding: 0.5em;
+  min-width: 2.3em;
+  max-width: 2.3em;
+  height: 2.3em;
+  white-space: nowrap;
+  line-height: 1.5em; /*it's working only when you write text with icon*/
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  margin-right: 0.5em;
+}
+
+.socialIcons li:hover a {
+  max-width: 200px;
+  padding-right: 1em;
+}
+
+.socialIcons .facebook {
+  background-color: #3b5998;
+  box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+  background-color: #00aced;
+  box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+  background-color: #cd486b;
+  box-shadow: 0 0 16px #cd486b;
+}
+
