@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
+
 <!--    <link rel="stylesheet" href="donate.css">-->
 <!--    <script src="https://js.churchcenter.com/modal/v1"></script>-->
     <div th:replace="fragments/fragments :: head"></div>
@@ -9,8 +10,57 @@
 <body>
 <div th:replace="fragments/navbar :: navbar"></div>
 <p>Under Construction</p>
+<!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post">-->
+
+<!--    &lt;!&ndash; Identify your business so that you can collect the payments. &ndash;&gt;-->
+<!--    <input type="hidden" name="business"-->
+<!--           value="example@example.org">-->
+
+<!--    &lt;!&ndash; Specify a Donate button. &ndash;&gt;-->
+<!--    <input type="hidden" name="cmd" value="_donations">-->
+
+<!--    &lt;!&ndash; Specify details about the contribution &ndash;&gt;-->
+<!--    <input type="hidden" name="item_name" value="Friends of the Park">-->
+<!--    <input type="hidden" name="item_number" value="Fall Cleanup Campaign">-->
+<!--    <input type="hidden" name="currency_code" value="USD">-->
+
+<!--    &lt;!&ndash; Display the payment button. &ndash;&gt;-->
+<!--    <input type="image" name="submit"-->
+<!--           src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"-->
+<!--           alt="Donate">-->
+<!--    <img alt="" width="1" height="1"-->
+<!--         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >-->
+
+<!--</form>-->
 <!--<a href="https://firstballard.churchcenter.com/giving" data-open-in-church-center-modal="true">Give online</a>-->
-<script type="text/javascript" src="https://form.jotform.com/jsform/210734129564152"></script>
+<!--<script type="text/javascript" src="https://form.jotform.com/jsform/210734129564152"></script>-->
+
+<form action="/donate" method="post">
+    <label for="firstName">First name:</label><br>
+    <input type="text" id="firstName" name="firstName" value=""><br>
+    <label for="lastName">Last name:</label><br>
+    <input type="text" id="lastName" name="LastName" value=""><br><br>
+    <label for="amount">Amount:</label><br>
+    <input type="text" id="amount" name="amount" value=""><br>
+    <label for="donorNotes">Donor notes:</label><br>
+    <input type="text" id="donorNotes" name="donorNotes" value=""><br><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value=""><br>
+    <label for="phoneNumber">Phone Number:</label><br>
+    <input type="text" id="phoneNumber" name="phoneNumber" value=""><br><br>
+    <label for="street">Street:</label><br>
+    <input type="text" id="street" name="street" value=""><br>
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city" value=""><br><br>
+    <label for="state">State:</label><br>
+    <input type="text" id="state" name="state" value=""><br>
+    <label for="zipCode">Zip Code:</label><br>
+    <input type="text" id="zipCode" name="zipCode" value=""><br><br>
+    <input type="submit" value="Submit">
+</form>
+
 <footer th:replace="fragments/footer :: footer"></footer>
+
+
 </body>
 </html>
